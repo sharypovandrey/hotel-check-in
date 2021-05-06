@@ -26,7 +26,7 @@ struct ButtonView: View {
                     text
                         .font(.primary)
                 })
-            .frame(width: 227.0, height: 50.0)
+            .frame(width: 334.0, height: 48.0)
             .background(Color.beigeColor)
             .foregroundColor(.lightColor)
         case .light:
@@ -34,7 +34,7 @@ struct ButtonView: View {
                 text
                     .font(.primary)
             }
-            .frame(width: 227.0, height: 50.0)
+            .frame(width: 334.0, height: 48.0)
             .foregroundColor(.beigeColor)
             .border(Color.beigeColor, width: 1)
         case .small:

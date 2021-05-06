@@ -11,7 +11,7 @@ import SwiftUI
 extension Image {
     // Welcome
     static var welcomeImg: Image {
-        return Image(uiImage: #imageLiteral(resourceName: "welcomeImg"))
+        return Image(uiImage: #imageLiteral(resourceName: "huge"))
     }
     static var logoImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "logo-footer_goldish"))
