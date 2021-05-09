@@ -10,13 +10,13 @@ import Combine
 
 class User: ObservableObject {
     @Published var isLoggedin:Bool = false
-    @Published var isCheckedin:Bool = false
+    @Published var isCheckedIn:Bool = false
     
     func login() {
         self.isLoggedin = true
     }
     func checkIn() {
-        self.isCheckedin = true
+        self.isCheckedIn = true
     }
     
 }
