@@ -28,7 +28,7 @@ struct WelcomeView: View {
                     }
                 TextView(font: .welcomeSubtitleFont, color: .beigeColor, text: .welcomeTitle)
                     .opacity(welcomeHidden)
-                    .animate(with: 1.5) {
+                    .animate(with: 2) {
                         welcomeHidden = 1
                     }
                 
@@ -40,7 +40,7 @@ struct WelcomeView: View {
                     self.user.login()
                 })
                 .opacity(applyButtonHidden)
-                .animate(with: 2) {
+                .animate(with: 3) {
                     applyButtonHidden = 1
                 }
                 
@@ -49,7 +49,7 @@ struct WelcomeView: View {
                 })
                 .foregroundColor(.darkColor)
                 .opacity(skipButtonHidden)
-                .animate(with: 2.5) {
+                .animate(with: 4) {
                     skipButtonHidden = 1
                 }
             }

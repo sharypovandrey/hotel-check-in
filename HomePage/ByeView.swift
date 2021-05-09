@@ -26,7 +26,7 @@ struct ByeView: View {
                             }
                         TextView(font: .welcomeSubtitleFont, color: .beigeColor, text: .buyTitle)
                             .opacity(welcomeHidden)
-                            .animate(with: 1.5) {
+                            .animate(with: 2) {
                                 welcomeHidden = 1
                             }
                     }.padding(.top, 238.0)
