@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var userAuth: UserAuth
+    @EnvironmentObject var user: User
     var body: some View {
-        
-        if !userAuth.isLoggedin {
+        if !user.isLoggedin {
                 Homepage()
-            } else {
-//                Pages()
-            }
+
+            
+        } else {
+            
+            //                Pages()
+        }
     }
-  }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

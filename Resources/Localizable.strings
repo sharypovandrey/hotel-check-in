@@ -9,6 +9,9 @@
 // MARK: - Titles
 //Welcome
 "welcome-title" = "WELCOME TO YOUR\nONCE IN A LIFETIME EXPERIENCE";
+"checkedIn-title" = "Checked-In";
+"yourLink-title" = "YOU CAN USE YOUR LINK LATER\nTO CUSTOMIZE YOUR STAY";
+"buy-title" = "WE LOOK FORWARD TO\nSEENIG YOU";
 //Pickup
 "pickup-title" = "Airport Pickup";
 "pickup-subtitle" = "Have our professional drivers\nmeet you at the airport.";

@@ -9,9 +9,16 @@ import Foundation
 import SwiftUI
 
 extension Font {
-    static var primary: Font {
+    static var buttonFont: Font {
         return Font.custom("OpenSans-Light", size: 18)
     }
+    static var welcomeSubtitleFont: Font {
+        return Font.custom("OpenSans-Light", size: 16)
+    }
+    static var bigTitle: Font {
+        return Font.custom("OpenSans-Regular", size: 40)
+    }
+    
     static var mainTitle: Font {
         return Font.custom("AdventPro-Bold", size: 38)
     }

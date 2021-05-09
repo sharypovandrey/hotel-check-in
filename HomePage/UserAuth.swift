@@ -8,10 +8,15 @@
 import Foundation
 import Combine
 
-class UserAuth: ObservableObject {
-        @Published var isLoggedin:Bool = false
-
-        func login() {
-            self.isLoggedin = true
-        }
+class User: ObservableObject {
+    @Published var isLoggedin:Bool = false
+    @Published var isCheckedin:Bool = false
+    
+    func login() {
+        self.isLoggedin = true
     }
+    func checkIn() {
+        self.isCheckedin = true
+    }
+    
+}

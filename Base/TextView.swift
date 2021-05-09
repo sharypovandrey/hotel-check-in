@@ -21,6 +21,6 @@ struct TextView: View {
 
 struct TextView_Previews: PreviewProvider {
     static var previews: some View {
-        TextView(font: .primary, color: .beigeColor, text: .welcomeTitle)
+        TextView(font: .welcomeSubtitleFont, color: .beigeColor, text: .welcomeTitle)
     }
 }

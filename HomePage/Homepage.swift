@@ -9,37 +9,43 @@ import SwiftUI
 
 
 struct Homepage: View {
-    @EnvironmentObject  var  userAuth: UserAuth
-
+    @EnvironmentObject  var  user: User
+    //    @State var scale: CGFloat = 1.5
+    @State var blur: CGFloat = 0
+    @State private var hasTimeElapsed = false
+    
     var body: some View {
-            ZStack {
-                MainBackgroundImageView(image: .welcomeImg)
-                   
-                VStack {
-                    VStack(spacing: 60.0) {
-                        Image.logoImg
-                        TextView(font: .primary, color: .beigeColor, text: .welcomeTitle)
         
-                    }.padding(.top, 238.0)
-                    Spacer(minLength: 200)
-                    
-                    VStack(spacing: 20.0){
-                        ButtonView(styleType: .dark, text: .customizeButtonTitle, action: {
-                            self.userAuth.login()
+        if !user.isCheckedin {
+            ZStack{
+                BackgroundView(appearStyle: .fadeOut)
+                WelcomeView()
+            }
+        } else{
+            ZStack{
+                BackgroundView(appearStyle: .fadeIn)
+//                TODO: -  display 5-10  сек after that display ByeView
+                if !hasTimeElapsed {
+                    Bye(appearStyle: .check)
+                        .onAppear(perform: {
+                            delay()
+                            
                         })
-                    
-                        
-                        
-                        ButtonView(styleType: .light, text: .skipButtonTitle, action: {})
-                            .foregroundColor(.darkColor)
-                    }
-                    .padding(.bottom, 64.0)
-                    
-
+                } else {
+                    Bye(appearStyle: .bye)
                 }
                 
             }
+        }   
     }
+    
+    private func delay() {
+           // Delay of 3 seconds
+           DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+               hasTimeElapsed = true
+           }
+       }
+    
 }
 
 struct Homepage_Previews: PreviewProvider {
@@ -49,6 +55,7 @@ struct Homepage_Previews: PreviewProvider {
             Homepage()
                 .previewDevice("iPhone 8")
         }
-
+        
     }
 }
+

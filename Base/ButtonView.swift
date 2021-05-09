@@ -24,7 +24,7 @@ struct ButtonView: View {
             Button(action: action,
                 label: {
                     text
-                        .font(.primary)
+                        .font(.buttonFont)
                 })
             .frame(width: 334.0, height: 48.0)
             .background(Color.beigeColor)
@@ -32,7 +32,7 @@ struct ButtonView: View {
         case .light:
             Button(action: action) {
                 text
-                    .font(.primary)
+                    .font(.buttonFont)
             }
             .frame(width: 334.0, height: 48.0)
             .foregroundColor(.beigeColor)
@@ -46,17 +46,12 @@ struct ButtonView: View {
                 }
                 
             }.foregroundColor(.grayColor)
-            
-            
         default:
             Button(action: action, label: {
                 text
             })
             .frame(width: 227.0, height: 50.0)
-            
         }
-
-        
     }
 }
 

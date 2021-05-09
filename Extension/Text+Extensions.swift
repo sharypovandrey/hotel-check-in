@@ -16,6 +16,15 @@ extension Text {
     static var welcomeTitle: Text {
         return Text("welcome-title")
     }
+    static var checkedInTitle: Text {
+        return Text("checkedIn-title")
+    }
+    static var yourLinkTitle: Text {
+        return Text("yourLink-title")
+    }
+    static var buyTitle: Text {
+        return Text("buy-title")
+    }
     //Pickup
     static var pickupTitle: Text {
         return Text("pickup-title")
