@@ -18,13 +18,12 @@ struct Homepage: View {
         
         if !user.isCheckedin {
             ZStack{
-                BackgroundView(appearStyle: .fadeOut)
+                BackgroundView(appearStyle: . fadeIn)
                 WelcomeView()
             }
         } else{
             ZStack{
-                BackgroundView(appearStyle: .fadeIn)
-//                TODO: -  display 5-10  сек after that display ByeView
+                BackgroundView(appearStyle: .fadeOut, blur: 10)
                 if !hasTimeElapsed {
                     Bye(appearStyle: .check)
                         .onAppear(perform: {

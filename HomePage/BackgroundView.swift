@@ -20,13 +20,13 @@ struct BackgroundView: View {
         switch appearStyle {
         case .fadeIn:
                 MainBackgroundImageView(image: .welcomeImg)
-                    .blur(radius: 0)
+                    .blur(radius: blur)
                     .animate(with: 1) {
                         blur = 10
                     }
         case .fadeOut:
                 MainBackgroundImageView(image: .welcomeImg)
-                    .blur(radius: 10)
+                    .blur(radius: blur)
                     .animate(with: 1) {
                         blur = 0
                     }
