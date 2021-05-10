@@ -6,9 +6,22 @@
 //
 
 import SwiftUI
-
 struct MainBackgroundImageView: View {
-    var image: Image
+    var story: Story
+    private var image: Image {
+        switch story {
+        case .airport:
+            return   Image.chaufferuImg
+        case .room:
+            return Image.roomImg
+        case .experience:
+            return Image.experienceImg
+        case .note:
+            return Image.noteImg
+        default:
+            return Image.welcomeImg
+        }
+    }
     var body: some View {
         image
             .resizable()
@@ -19,6 +32,6 @@ struct MainBackgroundImageView: View {
 
 struct MainBackgroundImageView_Previews: PreviewProvider {
     static var previews: some View {
-        MainBackgroundImageView(image: .InRoomImg)
+        MainBackgroundImageView(story: .airport)
     }
 }

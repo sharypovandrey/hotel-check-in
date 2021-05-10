@@ -15,7 +15,6 @@ struct TextView: View {
         text
             .font(font)
             .foregroundColor(color)
-            .multilineTextAlignment(.center)
     }
 }
 

@@ -23,6 +23,9 @@ extension Image {
     static var modalLineImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "modalLineImg"))
     }
+    static var rectangleImg: Image {
+        return Image(uiImage: #imageLiteral(resourceName: "Rectangle"))
+    }
     //Room
     static var roomImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "roomImg"))

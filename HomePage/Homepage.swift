@@ -11,12 +11,11 @@ import SwiftUI
 struct Homepage: View {
     @EnvironmentObject  var  user: User
     //    @State var scale: CGFloat = 1.5
-    @State var blur: CGFloat = 0
     @State private var hasTimeElapsed = false
     
     var body: some View {
         
-        if !user.isCheckedin {
+        if !user.isCheckedIn {
             ZStack{
                 BackgroundView(appearStyle: . fadeIn)
                 WelcomeView()

@@ -147,8 +147,8 @@ extension Text {
     static var customizeButtonTitle: Text {
         return Text("customize-buttonTitle")
     }
-    static var skipButtonTitle: Text {
-        return Text("skip-buttonTitle")
+    static var checkinButtonTitle: Text {
+        return Text("checkin-buttonTitle")
     }
     static var yesButtonTitle: Text {
         return Text("yes-buttonTitle")
@@ -158,6 +158,9 @@ extension Text {
     }
     static var setRoomButtonTitle: Text {
         return Text("setRoom-buttonTitle")
+    }
+    static var skipButtonTitle: Text {
+        return Text("skip-buttonTitle")
     }
     static var addButtonTitle: Text {
         return Text("add-buttonTitle")
