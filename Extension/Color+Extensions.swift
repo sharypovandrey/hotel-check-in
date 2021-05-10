@@ -12,10 +12,13 @@ extension Color {
         return Color(#colorLiteral(red: 0.6549019813537598, green: 0.5333333611488342, blue: 0.45490196347236633, alpha: 1))
     }
     static var darkColor: Color {
-        return Color(#colorLiteral(red: 0.14996249973773956, green: 0.14996249973773956, blue: 0.14996249973773956, alpha: 1))
+        return Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
+    }
+    static var darkGrayColor: Color {
+        return Color(#colorLiteral(red: 0.4000000059604645, green: 0.4000000059604645, blue: 0.4000000059604645, alpha: 1))
     }
     static var khakiColor: Color {
-        return Color(#colorLiteral(red: 0.5137255191802979, green: 0.5411764979362488, blue: 0.48627451062202454, alpha: 1))
+        return Color(#colorLiteral(red: 0.5137255192, green: 0.5411764979, blue: 0.4862745106, alpha: 1))
     }
     static var lightColor: Color {
         return Color(#colorLiteral(red: 0.9764705896377563, green: 0.9725490212440491, blue: 0.9647058844566345, alpha: 1))

@@ -28,6 +28,7 @@ struct WelcomeView: View {
                     }
                 TextView(font: .welcomeSubtitleFont, color: .beigeColor, text: .welcomeTitle)
                     .opacity(welcomeHidden)
+                    .multilineTextAlignment(.center)
                     .animate(with: 2) {
                         welcomeHidden = 1
                     }
@@ -44,7 +45,7 @@ struct WelcomeView: View {
                     applyButtonHidden = 1
                 }
                 
-                ButtonView(styleType: .light, text: .skipButtonTitle, action: {
+                ButtonView(styleType: .light, text: .checkinButtonTitle, action: {
                     self.user.checkIn()
                 })
                 .foregroundColor(.darkColor)

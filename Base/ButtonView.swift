@@ -20,6 +20,7 @@ struct ButtonView: View {
     
     var body: some View {
         switch  styleType {
+        // apply button
         case .dark:
             Button(action: action,
                 label: {
@@ -29,6 +30,7 @@ struct ButtonView: View {
             .frame(width: 334.0, height: 48.0)
             .background(Color.beigeColor)
             .foregroundColor(.lightColor)
+        // skip button
         case .light:
             Button(action: action) {
                 text
@@ -37,6 +39,7 @@ struct ButtonView: View {
             .frame(width: 334.0, height: 48.0)
             .foregroundColor(.beigeColor)
             .border(Color.beigeColor, width: 1)
+        // todo redeve
         case .small:
             Button(action: action) {
                 ZStack {

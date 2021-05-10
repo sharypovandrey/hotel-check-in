@@ -19,19 +19,19 @@ struct BackgroundView: View {
     var body: some View {
         switch appearStyle {
         case .fadeIn:
-                MainBackgroundImageView(image: .welcomeImg)
+                MainBackgroundImageView(story: .welcome)
                     .blur(radius: blur)
                     .animate(with: 1) {
                         blur = 10
                     }
         case .fadeOut:
-                MainBackgroundImageView(image: .welcomeImg)
+                MainBackgroundImageView(story: .welcome)
                     .blur(radius: blur)
                     .animate(with: 1) {
                         blur = 0
                     }
         default:
-                MainBackgroundImageView(image: .welcomeImg)
+                MainBackgroundImageView(story: .welcome)
         }
 
     }

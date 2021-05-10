@@ -58,10 +58,11 @@
 // MARK: - Buttons
 
 "customize-buttonTitle" = "CUSTOMIZE YOUR STAY";
-"skip-buttonTitle" = "JUST CHECK IN";
+"checkin-buttonTitle" = "JUST CHECK IN";
 "yes-buttonTitle" = "YES, PLEASE";
 "no-buttonTitle" = "NOT NEEDED";
 "setRoom-buttonTitle" = "SET MY ROOM";
+"skip-buttonTitle" = "SKIP FOR NOW";
 "add-buttonTitle" = "ADD TO TRIP";
 "next-buttonTitle" = "NEXT";
 "note-buttonTitle" = "LEAVE A NOTE";

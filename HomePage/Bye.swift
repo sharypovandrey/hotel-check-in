@@ -23,7 +23,7 @@ struct Bye: View {
         case .bye:
                 ByeView()
         default:
-                MainBackgroundImageView(image: .welcomeImg)
+            MainBackgroundImageView(story: .welcome)
         }
 
     }
