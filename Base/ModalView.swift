@@ -9,22 +9,34 @@ import SwiftUI
 
 struct ModalView: View {
     @Environment(\.presentationMode) var presentation
-//    let message: String
+    //    let message: String
     var storyType: Story
     var body: some View {
+        //        Color.backGroundGray
+        //            .ignoresSafeArea()
         ZStack {
-            Color.backGroundGray
-                .ignoresSafeArea()
+            
             switch storyType {
-//            case .airport: AirportPickupOrder()
-//            case .room: RoomControlOrder()
-//            case .experience: ExperienceOrder()
-//            case .note: LeaveANoteOrder()
+            case .airport:
+                Image.airportIconImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
+                TextView(font: .popupTitle, color: .darkColor, text: .pickupTitle).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 156))
+                AirportPickupOrder().frame(width: 414, height: 656)
+            case .room:
+                Image.roomOptionsImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
+                TextView(font: .popupTitle, color: .darkColor, text: .roomOptionsTitle).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 154))
+                RoomOptions()
+            case .experience:
+                Image.chooseYourServerImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
+                TextView(font: .popupTitle, color: .darkColor, text: .chooseYourServer).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 84))
+            case .note:
+                Image.notePopupImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
+                TextView(font: .popupTitle, color: .darkColor, text: .helpTitle).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 107))
+                
             default: Text("na")
                 
             }
-        }
-      
+        }.padding()
+        
     }
 }
 

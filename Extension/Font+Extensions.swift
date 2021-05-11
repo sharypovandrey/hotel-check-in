@@ -18,6 +18,21 @@ extension Font {
     static var bigTitle: Font {
         return Font.custom("OpenSans-Regular", size: 40)
     }
+    static var popupTitle: Font {
+        return Font.custom("OpenSans-Regular", size: 28)
+    }
+    static var temperature: Font {
+        return Font.custom("OpenSans-Regular", size: 24)
+    }
+    static var popupSubtitle: Font {
+        return Font.custom("OpenSans-Regular", size: 16)
+    }
+    static var popupRegular: Font {
+        return Font.custom("OpenSans-Regular", size: 14)
+    }
+    static var popupSmall: Font {
+        return Font.custom("OpenSans-Regular", size: 12)
+    }
     
     static var mainTitle: Font {
         return Font.custom("AdventPro-Bold", size: 38)

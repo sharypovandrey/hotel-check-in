@@ -17,9 +17,12 @@ struct TextFieldView: View {
         case .note:
             TextField(placeHolder, text: inputedText)
             .padding(EdgeInsets(top: 8.0, leading: 22.0, bottom: 8.0, trailing: 22.0))
-            .background(Image.bigTextField)
             .frame(width: 343.5, height: 151)
                 .lineLimit(0)
+        case .airport:
+            TextField(placeHolder, text: inputedText)
+            .frame(width: 334, height: 60)
+                .font(.popupSubtitle)
         default:
             TextField(placeHolder, text: inputedText)
             .padding(EdgeInsets(top: 8.0, leading: 22.0, bottom: 8.0, trailing: 22.0))

@@ -23,12 +23,27 @@ extension Image {
     static var modalLineImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "modalLineImg"))
     }
+    static var airportIconImg: Image {
+        return Image(uiImage: #imageLiteral(resourceName: "airport"))
+    }
     static var rectangleImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "Rectangle"))
+    }
+    static var tfBlackLineImg: Image {
+        return Image(uiImage: #imageLiteral(resourceName: "tfBlackLineImg"))
+    }
+    static var tfGrayLineImg: Image {
+        return Image(uiImage: #imageLiteral(resourceName: "tfGrayLineImg"))
+    }
+    static var moreImg: Image {
+        return Image(uiImage: #imageLiteral(resourceName: "more"))
     }
     //Room
     static var roomImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "roomImg"))
+    }
+    static var roomOptionsImg: Image {
+        return Image(uiImage: #imageLiteral(resourceName: "roomOptionsImg"))
     }
     static var plusButton: Image {
         return Image(uiImage: #imageLiteral(resourceName: "plusButton"))
@@ -39,6 +54,9 @@ extension Image {
     //Experiences
     static var experienceImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "experienceImg"))
+    }
+    static var chooseYourServerImg: Image {
+        return Image(uiImage: #imageLiteral(resourceName: "chooseYourServerImg"))
     }
     static var massageServiceImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "massageServiceImg"))
@@ -61,8 +79,8 @@ extension Image {
     static var noteImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "noteImg"))
     }
-    static var bigTextField: Image {
-        return Image("bigTextField")
+    static var notePopupImg: Image {
+        return Image(uiImage: #imageLiteral(resourceName: "notePopupIconImg"))
     }
 //    Button
     

@@ -97,6 +97,9 @@ extension Text {
     static var experiencesSubtitle: Text {
         return Text("experiences-subtitle")
     }
+    static var chooseYourServer: Text {
+        return Text("chooseYourServer-title")
+    }
     static var massageTitle: Text {
         return Text("massage-title")
     }
@@ -128,8 +131,8 @@ extension Text {
     static var leaveANoteSubtitle: Text {
         return Text("leaveANote-subtitle")
     }
-    static var helpSubtitle: Text {
-        return Text("What can we help with?-subtitle")
+    static var helpTitle: Text {
+        return Text("How can we help?-title")
     }
     static var requestPlaceholder: Text {
         return Text("request-placeholder")

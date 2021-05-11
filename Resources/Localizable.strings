@@ -37,6 +37,7 @@
 "success-subtitle" = "Your code is set.";
 //Experiences
 "experiences-title" = "Experiences";
+"chooseYourServer-title" = "Choose Your Server";
 "experiences-subtitle" = "Reserve your outings to create\nthe memory of a lifetime.";
 "massage-title" = "Massage Service";
 "massageCost-title" = "¥1288";
@@ -49,7 +50,7 @@
 //Leave a Note
 "leaveANote-title" = "Leave a note";
 "leaveANote-subtitle" = "Let our team know about\nany special requests.";
-"What can we help with?-subtitle" = "What can we help with?";
+"How can we help?-title" = "How can we help?";
 "request-placeholder" = "Enter your requests...";
 "saved-title" = "Saved";
 "saved-subtitle" = "You can use your link later\nto change your selections.";
