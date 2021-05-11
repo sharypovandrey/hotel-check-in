@@ -11,10 +11,6 @@ struct AirportPickupOrder: View {
     @State private var flightNumber: String = ""
     var body: some View {
         
-        //
-//        Image.airportIconImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
-//        TextView(font: .popupTitle, color: .darkColor, text: .pickupTitle).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 156))
-        
         TextFieldView(story: .airport, placeHolder: "Enter Flight Number",  inputedText: $flightNumber)
             .padding(EdgeInsets(top: 130, leading: 40, bottom: 466, trailing: 40))
         Image.tfBlackLineImg

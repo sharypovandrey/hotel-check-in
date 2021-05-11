@@ -68,6 +68,7 @@
 "next-buttonTitle" = "NEXT";
 "note-buttonTitle" = "LEAVE A NOTE";
 "submit-buttonTitle" = "SUBMIT";
+"confirm-buttonTitle" = "CONFIRM";
 "setTime-buttonTitle" = "Set Time";
 "setCode-buttonTitle" = "Set Code";
 "delete-buttonTitle" = "Delete";

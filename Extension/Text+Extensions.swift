@@ -177,6 +177,9 @@ extension Text {
     static var submitButtonTitle: Text {
         return Text("submit-buttonTitle")
     }
+    static var confirmButtonTitle: Text {
+        return Text("confirm-buttonTitle")
+    }
     static var setTimeButtonTitle: Text {
         return Text("setTime-buttonTitle")
     }

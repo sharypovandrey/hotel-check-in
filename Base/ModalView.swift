@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ModalView: View {
     @Environment(\.presentationMode) var presentation
+    @Binding var showingModal:Bool
+
     //    let message: String
     var storyType: Story
     var body: some View {
@@ -20,17 +22,30 @@ struct ModalView: View {
             case .airport:
                 Image.airportIconImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
                 TextView(font: .popupTitle, color: .darkColor, text: .pickupTitle).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 156))
-                AirportPickupOrder().frame(width: 414, height: 656)
+                AirportPickupOrder()
+          
+                ButtonView(styleType: .dark, text: .confirmButtonTitle) {
+                    self.showingModal = false
+                }.padding(EdgeInsets(top: 544, leading: 40, bottom: 50, trailing: 49))
+                
             case .room:
                 Image.roomOptionsImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
                 TextView(font: .popupTitle, color: .darkColor, text: .roomOptionsTitle).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 154))
                 RoomOptions()
+                ButtonView(styleType: .dark, text: .confirmButtonTitle) {
+                    self.showingModal = false
+                }.padding(EdgeInsets(top: 544, leading: 40, bottom: 50, trailing: 49))
             case .experience:
                 Image.chooseYourServerImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
                 TextView(font: .popupTitle, color: .darkColor, text: .chooseYourServer).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 84))
+                
             case .note:
                 Image.notePopupImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
                 TextView(font: .popupTitle, color: .darkColor, text: .helpTitle).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 107))
+                NoteForm()
+                ButtonView(styleType: .dark, text: .confirmButtonTitle) {
+                    self.showingModal = false
+                }.padding(EdgeInsets(top: 544, leading: 40, bottom: 50, trailing: 49))
                 
             default: Text("na")
                 
