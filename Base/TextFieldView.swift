@@ -15,13 +15,13 @@ struct TextFieldView: View {
         
         switch story {
         case .note:
-            TextField(placeHolder, text: inputedText)
-            .frame(width: 334, height: 160)
+            TextEditor(text: inputedText)
+                .frame(width: 334, height: 160)
                 .lineLimit(5)
                 .font(.popupSubtitle)
                 
         case .airport:
-            TextField(placeHolder, text: inputedText)
+            TextEditor(text: inputedText)
             .frame(width: 334, height: 60)
                 .font(.popupSubtitle)
         default:

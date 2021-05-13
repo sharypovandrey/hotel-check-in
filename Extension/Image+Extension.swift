@@ -30,7 +30,7 @@ extension Image {
         return Image(uiImage: #imageLiteral(resourceName: "Rectangle"))
     }
     static var tfBlackLineImg: Image {
-        return Image(uiImage: #imageLiteral(resourceName: "tfBlackLineImg"))
+        return Image(uiImage: #imageLiteral(resourceName: "tfblackLineImg"))
     }
     static var tfGrayLineImg: Image {
         return Image(uiImage: #imageLiteral(resourceName: "tfGrayLineImg"))

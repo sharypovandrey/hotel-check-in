@@ -92,7 +92,7 @@ struct MainStackView: View {
                 .foregroundColor(.darkColor)
                 .padding(.bottom, 64.0)
 
-        }   //скролл
+        } 
     }
 }
 

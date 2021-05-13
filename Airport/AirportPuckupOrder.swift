@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct AirportPickupOrder: View {
-    @State private var flightNumber: String = ""
+    @State private var flightNumber: String = "Enter flight number"
     var body: some View {
         
-        TextFieldView(story: .airport, placeHolder: "Enter Flight Number",  inputedText: $flightNumber)
+        TextFieldView(story: .airport,  inputedText: $flightNumber)
             .padding(EdgeInsets(top: 130, leading: 40, bottom: 466, trailing: 40))
         Image.tfBlackLineImg
             .padding(EdgeInsets(top: 188, leading: 40, bottom: 466.5, trailing: 40))

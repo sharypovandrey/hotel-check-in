@@ -16,10 +16,9 @@
 "pickup-title" = "Airport Pickup";
 "pickup-subtitle" = "Have our professional drivers\nmeet you at the airport.";
 "when-title" = "When is your arrival?";
-"flight-title" = "Enter Flight Number";
+"flight-placeholder" = "Enter Flight Number";
 "or-title" = "- or -";
 "pickupTime-title" = "Pickup Time";
-"pickupTime-placeholder" = "12:15 pm";
 //Room
 "roomOptions-title" = "Room Options";
 "roomOptions-subtitle" = "Set your ideal temperature and\nupgrade to a better view.";

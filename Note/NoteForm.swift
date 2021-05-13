@@ -8,20 +8,27 @@
 import SwiftUI
 
 struct NoteForm: View {
-    @State private var request: String = ""
-//    @State var text: String = "Multiline \ntext \nis called \nTextEditor"
-
+    @State private var request: String = ""    
     var body: some View {
-        TextEditor(text: $request)
-            .frame(width: 334, height: 160)
-            .font(.popupSubtitle)
-            .padding(EdgeInsets(top: 130, leading: 40, bottom: 466, trailing: 40))
-        Text(request).opacity(0).padding(.all, 8) // <- This will solve the issue if it is in the same ZStack
+//        TextArea("Enter your request", text: $request)
+//            .frame(width: 334, height: 160)
+//                            .font(.popupSubtitle)
+//                            .padding(EdgeInsets(top: 148, leading: 40, bottom: 348, trailing: 40))
+        ZStack() {
+            if request.isEmpty {
+                HStack {
+                    TextView(font: .popupSubtitle, color: .lightGrayColor, text: .requestPlaceholder)
+                        .padding(EdgeInsets(top: 158, leading: 50, bottom: 472, trailing: 203))
+                    Spacer()
+                }
+            }
 
-
-//        TextFieldView(story: .note, placeHolder: "Enter your request",  inputedText: $request)
-//            .padding(EdgeInsets(top: 130, leading: 40, bottom: 466, trailing: 40))
-
+            TextEditor(text: $request)
+                .frame(width: 334, height: 160)
+                .font(.popupSubtitle)
+                .padding(EdgeInsets(top: 148, leading: 40, bottom: 348, trailing: 40))
+                .opacity(request.isEmpty ? 0.25 : 1)
+        }
     }
 }
 

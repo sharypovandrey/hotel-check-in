@@ -35,17 +35,14 @@ extension Text {
     static var whenTitle: Text {
         return Text("when-title")
     }
-    static var flightTitle: Text {
-        return Text("flight-title")
+    static var flightPlaceholder: Text {
+        return Text("flight-placeholder")
     }
     static var orTitle: Text {
         return Text("or-title")
     }
     static var pickupTimeTitle: Text {
         return Text("pickupTime-title")
-    }
-    static var pickupTimePlaceholder: Text {
-        return Text("pickupTime-placeholder")
     }
     //Room
     static var roomOptionsTitle: Text {

@@ -11,11 +11,8 @@ struct ModalView: View {
     @Environment(\.presentationMode) var presentation
     @Binding var showingModal:Bool
 
-    //    let message: String
     var storyType: Story
     var body: some View {
-        //        Color.backGroundGray
-        //            .ignoresSafeArea()
         ZStack {
             
             switch storyType {
@@ -36,9 +33,10 @@ struct ModalView: View {
                     self.showingModal = false
                 }.padding(EdgeInsets(top: 544, leading: 40, bottom: 50, trailing: 49))
             case .experience:
-                Image.chooseYourServerImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
-                TextView(font: .popupTitle, color: .darkColor, text: .chooseYourServer).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 84))
-                
+                ExperienceOrder().padding(.top, 120.0)
+                Image.chooseYourServerImg.padding(EdgeInsets(top: 74, leading: 38, bottom: 786, trailing: 352))
+                TextView(font: .popupTitle, color: .darkColor, text: .chooseYourServer).padding(EdgeInsets(top: 69, leading: 72, bottom: 787, trailing: 84))
+               
             case .note:
                 Image.notePopupImg.padding(EdgeInsets(top: 62, leading: 38, bottom: 570, trailing: 352))
                 TextView(font: .popupTitle, color: .darkColor, text: .helpTitle).padding(EdgeInsets(top: 57, leading: 72, bottom: 571, trailing: 107))
@@ -50,7 +48,7 @@ struct ModalView: View {
             default: Text("na")
                 
             }
-        }.padding()
+        }.padding(0)
         
     }
 }
