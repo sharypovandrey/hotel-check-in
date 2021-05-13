@@ -22,6 +22,7 @@ struct Pages: View {
                             height: UIScreen.main.bounds.height
             )
         }.edgesIgnoringSafeArea(.all)
+        
         .onAppear(perform: {
                    UIScrollView.appearance().bounces = false
                  })
