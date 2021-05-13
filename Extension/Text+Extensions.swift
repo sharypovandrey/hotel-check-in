@@ -35,17 +35,14 @@ extension Text {
     static var whenTitle: Text {
         return Text("when-title")
     }
-    static var flightTitle: Text {
-        return Text("flight-title")
+    static var flightPlaceholder: Text {
+        return Text("flight-placeholder")
     }
     static var orTitle: Text {
         return Text("or-title")
     }
     static var pickupTimeTitle: Text {
         return Text("pickupTime-title")
-    }
-    static var pickupTimePlaceholder: Text {
-        return Text("pickupTime-placeholder")
     }
     //Room
     static var roomOptionsTitle: Text {
@@ -97,6 +94,9 @@ extension Text {
     static var experiencesSubtitle: Text {
         return Text("experiences-subtitle")
     }
+    static var chooseYourServer: Text {
+        return Text("chooseYourServer-title")
+    }
     static var massageTitle: Text {
         return Text("massage-title")
     }
@@ -128,8 +128,8 @@ extension Text {
     static var leaveANoteSubtitle: Text {
         return Text("leaveANote-subtitle")
     }
-    static var helpSubtitle: Text {
-        return Text("What can we help with?-subtitle")
+    static var helpTitle: Text {
+        return Text("How can we help?-title")
     }
     static var requestPlaceholder: Text {
         return Text("request-placeholder")
@@ -173,6 +173,9 @@ extension Text {
     }
     static var submitButtonTitle: Text {
         return Text("submit-buttonTitle")
+    }
+    static var confirmButtonTitle: Text {
+        return Text("confirm-buttonTitle")
     }
     static var setTimeButtonTitle: Text {
         return Text("setTime-buttonTitle")

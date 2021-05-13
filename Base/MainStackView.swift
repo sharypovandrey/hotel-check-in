@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import PartialSheet
 
 
 struct MainStackView: View {
-    @State private var showAllowModal = false
+    @State var showingModal = false
+    @EnvironmentObject var partialSheet : PartialSheetManager
+
     var story: Story
     private var title: Text {
         switch story {
@@ -80,18 +83,16 @@ struct MainStackView: View {
                 .padding(.top, 20)
             Spacer()
             ButtonView(styleType: .dark, text: allowButtonTitle) {
-                self.showAllowModal = true
-            }.sheet(isPresented: $showAllowModal, onDismiss: {
-                print(self.showAllowModal)
-            }) {
-                ModalView(storyType: story)
+                self.showingModal = true
+            }.partialSheet(isPresented: $showingModal) {
+                ModalView(showingModal: self.$showingModal, storyType: story)
             }
                 .padding(.bottom, 10.0)
             ButtonView(styleType: .light, text: denyButtonTitle, action: denyAction)
                 .foregroundColor(.darkColor)
                 .padding(.bottom, 64.0)
 
-        }   //скролл
+        } 
     }
 }
 

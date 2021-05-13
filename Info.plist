@@ -15,11 +15,24 @@
 	<key>CFBundlePackageType</key>
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>OpenSans-Light.ttf</string>
+		<string>AdventPro-Bold.ttf</string>
+		<string>AdventPro-ExtraLight.ttf</string>
+		<string>AdventPro-Light.ttf</string>
+		<string>AdventPro-Medium.ttf</string>
+		<string>AdventPro-Regular.ttf</string>
+		<string>AdventPro-SemiBold.ttf</string>
+		<string>AdventPro-Thin.ttf</string>
+		<string>OpenSans-Light.ttf</string>
+		<string>OpenSans-Regular.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -55,19 +68,6 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIAppFonts</key>
-	<array>
-		<string>OpenSans-Light.ttf</string>
-		<string>AdventPro-Bold.ttf</string>
-		<string>AdventPro-ExtraLight.ttf</string>
-		<string>AdventPro-Light.ttf</string>
-		<string>AdventPro-Medium.ttf</string>
-		<string>AdventPro-Regular.ttf</string>
-		<string>AdventPro-SemiBold.ttf</string>
-		<string>AdventPro-Thin.ttf</string>
-		<string>OpenSans-Light.ttf</string>
-		<string>OpenSans-Regular.ttf</string>
 	</array>
 </dict>
 </plist>

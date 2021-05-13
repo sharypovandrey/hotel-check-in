@@ -16,10 +16,9 @@
 "pickup-title" = "Airport Pickup";
 "pickup-subtitle" = "Have our professional drivers\nmeet you at the airport.";
 "when-title" = "When is your arrival?";
-"flight-title" = "Enter Flight Number";
+"flight-placeholder" = "Enter Flight Number";
 "or-title" = "- or -";
 "pickupTime-title" = "Pickup Time";
-"pickupTime-placeholder" = "12:15 pm";
 //Room
 "roomOptions-title" = "Room Options";
 "roomOptions-subtitle" = "Set your ideal temperature and\nupgrade to a better view.";
@@ -37,6 +36,7 @@
 "success-subtitle" = "Your code is set.";
 //Experiences
 "experiences-title" = "Experiences";
+"chooseYourServer-title" = "Choose Your Server";
 "experiences-subtitle" = "Reserve your outings to create\nthe memory of a lifetime.";
 "massage-title" = "Massage Service";
 "massageCost-title" = "¥1288";
@@ -49,7 +49,7 @@
 //Leave a Note
 "leaveANote-title" = "Leave a note";
 "leaveANote-subtitle" = "Let our team know about\nany special requests.";
-"What can we help with?-subtitle" = "What can we help with?";
+"How can we help?-title" = "How can we help?";
 "request-placeholder" = "Enter your requests...";
 "saved-title" = "Saved";
 "saved-subtitle" = "You can use your link later\nto change your selections.";
@@ -67,6 +67,7 @@
 "next-buttonTitle" = "NEXT";
 "note-buttonTitle" = "LEAVE A NOTE";
 "submit-buttonTitle" = "SUBMIT";
+"confirm-buttonTitle" = "CONFIRM";
 "setTime-buttonTitle" = "Set Time";
 "setCode-buttonTitle" = "Set Code";
 "delete-buttonTitle" = "Delete";
